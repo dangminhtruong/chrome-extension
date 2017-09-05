@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vnua</title>
+	<meta charset="utf-8">
+    <title>Dung Hanh</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="popup_body">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<form role="form">
+					  <div class="form-group" id="input_msv_form">
+					    <label id="input_msv_label">Nhập mã sinh viên</label>
+					    <input type="email" class="form-control" id="input_msv" placeholder="Mã sinh viên">
+					  </div>
+					  <button type="button" id="load_btn" class="btn btn-sm btn-danger">Xem</button>
+					  <div id="ho_ten_sv"><b id="student_name"></b></div>
+					</form>
+				</div>
+				<!---->
+				<div style="display:none" class="col-md-12" id="load_vnua">	</div>
+				<!---->
+				<div class="col-md-12">
+					<p id="st_name">
+						
+					</p>
+				</div>
+				<div id="time_table">
+					  <div class="col-t">
+					  	<div class="row_title">Tiết</div>
+					  	<div class="row_lession_start">1</div>
+					  	<div class="row_lession_start">2</div>
+					  	<div class="row_lession_start">3</div>
+					  	<div class="row_lession_start">4</div>
+					  	<div class="row_lession_start">5</div>
+					  	<div class="row_lession_start">6</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_lession_start">7</div>
+					  	<div class="row_lession_start">8</div>
+					  	<div class="row_lession_start">9</div>
+					  	<div class="row_lession_start">10</div>
+					  	<div class="row_lession_start">11</div>
+					  	<div class="row_lession_start">12</div>
+
+					  </div>
+					  <!---------------------------------------------->
+					  <div class="col">
+					  	<div class="row_title">Thứ 2</div>
+					  	<div class="row_blocks" id="21">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="22">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_blocks" id="23">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="24">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  </div>
+					  <div class="col">
+					  	<div class="row_title">Thứ 3</div>
+					  	<div class="row_blocks" id="31">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="32">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_blocks" id="33">
+							  	<div class="row_lession_start"></div>
+							  	<div class="row_lession_start"></div>
+							  	<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="34">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  </div>
+					  <div class="col">
+					  	<div class="row_title">Thứ 4</div>
+					  	<div class="row_blocks" id="41">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="42">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_blocks" id="43">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="44">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  </div>
+					  <div class="col">
+					  	<div class="row_title">Thứ 5</div>
+					  	<div class="row_blocks" id="51">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="52">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_blocks" id="53">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="54">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  </div>
+					  <div class="col">
+					  	<div class="row_title">Thứ 6</div>
+					  	<div class="row_blocks" id="61">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="22">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_blocks" id="63">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="64">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  </div>
+					  <div class="col">
+					  	<div class="row_title">Thứ 7</div>
+					  	<div class="row_blocks" id="71">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="72">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_blocks" id="73">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="74">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  </div>
+					  <div class="col">
+					  	<div class="row_title">CN</div>
+					  	<div class="row_blocks" id="CN1">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="CN2">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+
+					  	<div id="row_rest_time"></div>
+
+					  	<div class="row_blocks" id="CN3">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  	<div class="row_blocks" id="CN4">
+					  		<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+							<div class="row_lession_start"></div>
+					  	</div>
+					  </div>
+				</div>
+			</div>
+		</div>
+
+
+
+	<!---------------------------------------------------->
+		 <script src="../js/jquery-3.2.1.min.js"></script>
+		 <script src="../js/bootstrap.js"></script>
+  		 <script src="../js/customize.js"></script>
+</body>
+</html>

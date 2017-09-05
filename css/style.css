@@ -1,0 +1,47 @@
+#popup_body{
+	width: 730px;
+}
+#input_msv_form{
+	text-align: center;
+}
+#main_time_table{
+	font-size: 12px;
+}
+.col{
+	width: 100px;
+	float: left;
+	text-align: center;
+	border-style: solid;
+    border-width: 1px;
+}
+.col-t{
+	width: 30px;
+	float: left;
+	text-align: center;
+	border-style: solid;
+    border-width: 0.5px;
+}
+
+.row_lession_start{
+	height: 50px;
+	border-style: solid;
+    border-width: 0.5px;
+}
+.row_blocks{
+	height: 150px;
+	border-style: solid;
+    border-width: 0.5px;
+}
+.row_title{
+	height: 20px;
+	border-style: solid;
+    border-width: 0.5px;
+}
+#row_rest_time{
+	height: 30px;
+	border-left: none;
+    text-align: center;
+}
+#ho_ten_sv{
+	text-align: center;
+}

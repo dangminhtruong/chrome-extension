@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Vnua",
+  "version": "1.0.0",
+  "icons": {
+              "16" : "images/vnua16.jpg",
+              "48" : "images/vnua48.jpg",
+              "128" : "images/vnua128.jpg"
+  },
+  "browser_action": {
+    "default_title": "Vnua",
+    "default_icon": "images/vnua128.jpg",
+    "default_popup": "html/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*","http://*/*"
+      ],
+      "js": [
+        "js/jquery-3.2.1.min.js","js/customize.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
